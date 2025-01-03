@@ -50,4 +50,4 @@ git push -u origin main
 
 =========================================
 below is container image url
-docker.io/timothyfudocker/springboot-docker-demo:v1.00
+docker.io/timothyfudocker/ordertableweb:v1.00
