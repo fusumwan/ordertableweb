@@ -20,13 +20,13 @@ jobs:
       #run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD  
     
     - name: Build the Docker image
-      run: docker build -t timothyfudocker/ordertableweb.war:latest .
+      run: docker build -t timothyfudocker/ordertableweb:latest .
       
     - name: Tag the Docker image with v1.00
-      run: docker tag timothyfudocker/ordertableweb.war:latest timothyfudocker/ordertableweb.war:v1.00
+      run: docker tag timothyfudocker/ordertableweb:latest timothyfudocker/ordertableweb:v1.00
 
     - name: Push the Docker image (latest tag)
-      run: docker push timothyfudocker/ordertableweb.war:latest
+      run: docker push timothyfudocker/ordertableweb:latest
 
     - name: Push the Docker image (v1.00 tag)
-      run: docker push timothyfudocker/ordertableweb.war:v1.00
+      run: docker push timothyfudocker/ordertableweb:v1.00
